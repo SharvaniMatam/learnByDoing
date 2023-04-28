@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coloumn Preview Card Component</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container-box{
+            width: 200px;
+            height: 300px;
+            padding: 32px;
+            color: white;
+        }
+        .first-container{
+            background-color:rgb(245, 157, 49);
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        .second-container{
+            background-color:cornflowerblue;
+        }
+        .third-container{
+            background-color:rgb(6, 109, 95);
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+        .first-container button{
+            color: rgb(245, 157, 49);
+            margin-top: 30px;
+        }
+        .second-container button{
+            color: cornflowerblue;
+            margin-top: 30px;
+        }
+        .third-container button{
+            color: rgb(6, 109, 95);
+            margin-top: 30px;
+        }
+        .profile-pic{
+            width: 40px;
+            height: 40px;
+            border: 1px solid lightgray;
+            border-radius:20px;
+
+        }
+        button{
+            width: 150px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid wheat;    
+        }
+        .para{
+            font-size: 14px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container-box first-container">
+            <div class="profile-pic">
+                
+            </div>
+            <h1 class="font">SEDANS</h1>
+            <p class="para">choose a sedan for its affordability and excellent fuel economy.I deal for cruising in the city or on your next road trip.</p>
+            <button>Learn More</button>    
+        </div>
+        <div class="container-box second-container">
+            <div class="profile-pic"></div>
+            <h1 class="font">SUVS</h1>
+            <p class="para">Take an SUV for its spacious interior,power,and versatility.Perfect for your next family vacation and off-road adventures.</p>
+            <button>Learn More</button>
+        </div>
+        <div class="container-box third-container">
+            <div class="profile-pic"></div>
+            <h1 class="font">LUXURY</h1>
+            <p class="para">Cruise in the best car brands without the bloated prices.Enjoy the enhanced comfort of a luxury rental and arrive in style.</p>
+            <button>Learn More</button>
+        </div>
+    </div>
+    
+</body>
+</html>

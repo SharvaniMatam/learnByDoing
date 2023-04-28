@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OrderSummary</title>
+    <style>
+        body{
+            background-color: rgb(209, 241, 241);
+        }
+
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .container_1{
+            width: 300px;
+            border-radius: 5px;
+        }
+        .top-container{
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+        }
+        img{
+            width: 100%;
+        }
+        .bottom-container{
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            justify-content: center;
+            align-items: center;
+            /* text-align: center; */
+            background-color: whitesmoke;
+            padding: 16px 32px;
+        } 
+        .plan{
+            display: flex;
+            width: 100%;
+
+            justify-content: space-between; 
+        }
+        #description{
+            margin: 0px 10px;
+        }
+        button{
+            background-color: blue;
+            color: white;
+            width: 200px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="container_1">
+
+            <div class="top-container">
+                <img src="C:\Users\Admin\Downloads\minh-pham-RsmOYMxmlYU-unsplash.jpg" alt="" width="400px" height="250px"/>
+            </div>
+
+            <div class="bottom-container">
+                <h2>Order Summary</h2>
+                <p id="description">You can now listen to millions of songs,audiobooks and podcasts on any device anywhere you like!</p>
+                <div class="plan">
+                    <p>Annual Plan <br>$59.99/year</p>
+                    
+                    <a href=""><p style="text-align: right;" >change</p></a>
+                </div>
+
+                <div class="laststep">
+                    <button>Proceed to Payment</button><br><br>
+                    <button>Cancel</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

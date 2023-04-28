@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Score</title>
+    <style>
+        .container{
+            height: 100vh;
+            width: 100%;
+            border: 2px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;    
+        }
+        .left-section{              
+            width: 300px;
+            height: 400px;
+            background-color:blue;
+            border-radius: 10px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        .profile-pic{
+            width: 90px;
+            height: 90px;
+            border:2px solid paleturquoise;
+            border-radius: 45px;
+            
+        }
+        .right-section{
+            width: 300px;
+            height: 400px;
+            border: 2px solid rgb(252, 250, 246);
+            background-color:whitesmoke;
+            border-radius: 10px;
+            position: relative;
+        }
+        button{
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+            width: 100px;
+            color: white;
+            background-color: black;
+
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+            padding: 10px;
+        }
+        .card{
+            width: 100%;
+            height: 50px;
+            border: 2px dashed lightcyan;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h3>Your Result</h3>
+            <div class="profile-pic">76 of 100</div>
+            <div class="leftchild">Great</div>
+            <div class="leftchild1">You scored higher than 65% of the people who have taken these tests.</div>
+        
+        </div>
+        <div class="right-section">
+            <div class="cards">
+                <div id="sum">Summary</div>
+                <div class="card">
+                    <h3 style="color:red;"">@ reaction</h3>
+                </div>
+                <div class="card">
+                    <h3 style="color: gold;">*Memory</h3>
+                </div>
+                <div class="card">
+                    <h3 style="color: lightgreen;">$Verbal</h3>
+                </div>
+                <div class="card">
+                    <h3 style="color: blue;">&Visual</h3>
+                </div>
+            </div>
+            <button>Continue</button>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>

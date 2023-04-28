@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Preview Component</title>
+    <style>
+        /* CSS Resets */
+        html,body,div, p, h1, h2, h3, h4, h5, h6{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: rgb(238, 253, 253);
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .left-container{
+            width: 300px;
+            height: 270px;
+            /* border: 1px solid black; */
+        }
+        .right-container{
+            width: 400px;
+            height: 240px;
+            border: 1px solid whitesmoke;
+            padding: 16px;
+            background-color: white;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 25px;
+        }
+        .com1{
+            font-size:larger;
+        }
+        .profile-pic{
+            width: 40px;
+            height: 40px;
+            border: 1px solid rgb(220, 198, 198);
+            border-radius: 20px;
+        }
+        .com3{
+            display: flex;
+            font-size: large; 
+            column-gap: 10px;   
+        }
+        .last-step{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-container">
+            <img src="C:\Users\Admin\Downloads\bernd-dittrich-CF-OEeVht8k-unsplash.jpg" width="300px" height="270px"/>
+        </div>
+        <div class="right-container">
+            <div class="component com1">
+                <h3>Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
+            </div>
+            <div class="component com2">
+                <p>Ever been in a room and felt like something was missing? Perhaps it felt slightly blare and unfitting I've have got some sample tips so help you make any room feel complete</p>
+            </div>
+            <div class="component com3">
+                <div class="profile-pic"></div>
+            <div class="last-step">
+                <h4>Miichelle Applleton</h4>
+                <p>28-jun-2020</p>
+            </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

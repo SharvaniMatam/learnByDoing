@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time project</title>
+    <style>
+        body{
+          background-color: black;
+        }
+        #container{
+          display: flex;
+          color: #fff;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        }
+        #timeCards{
+          display: flex;
+          width: 900px;
+          height: 400px;
+          align-items: center;
+          gap: 16px;
+        }
+        #leftCards{
+          display: flex;
+          flex-direction: column;
+          align-items: stretch;
+          height: 100%; 
+          width: 200px;
+        }
+        #rightCards{
+          display: flex;
+          flex-wrap: wrap;
+          gap: 16px;
+          align-items: center;
+        }
+        .card{
+          height: 150px; 
+          width: 168px; 
+          padding: 16px;
+          background-color: rgba(22,22,58);
+        }
+        .card1{
+           height: 500px;
+        }
+        .card2{
+            border-top: 16px solid orange;
+
+        }
+        .card3{
+            border-top: 16px solid skyblue;
+        }
+        .card4{
+            border-top: 16px solid palevioletred;
+        }
+        .card5{
+            border-top: 16px solid green;
+        }
+        .card6{
+            border-top: 16px solid blueviolet;
+        }
+        .card7{
+            border-top: 16px solid gold;
+        }
+        .profile-top{
+          height: 70%;
+          background-color: rgb(62, 62, 214);
+          width: 180px;
+          border-radius: 10px;
+          padding: 10px;
+        }
+        .profile-pic{
+          width: 50px;
+          height: 50px;
+          border: 1px solid white;
+          border-radius: 25px;
+        }
+        .profile-bottom{
+          background-color: rgba(22,22,58);
+        }
+      </style>
+    </head>
+    <body>
+      <div id="container">
+        <div id="timeCards">
+          <div id="leftCards">
+            <div class="profile-top">
+              <div class="profile-pic"></div>
+              <p>Report For</p>
+              <h2>Jeremy Robson</h2>
+            </div>
+            <div class="profile-bottom">
+              <p>Daily</p>
+              <p>Weekly</p>
+              <p>Monthly</p>
+            </div>
+    
+          </div>
+          <div id="rightCards">
+            <div class="card card2">
+                <h3>Work</h3>
+                <h2>32hrs</h2>
+                <p>Last Week-36hrs</p>
+            </div>
+            <div class="card card3">
+                <h3>Play</h3>
+                <h2>10hrs</h2>
+                <p>Last Week-8hrs</p>
+            </div>
+            <div class="card card4">
+                <h3>Study</h3>
+                <h2>4hrs</h2>
+                <p>Last Week-7hrs</p>
+            </div>
+            <div class="card card5">
+                <h3>Exercise</h3>
+                <h2>4hrs</h2>
+                <p>Last Week-5hrs</p>
+            </div>
+            <div class="card card6">
+                <h3>Social</h3>
+                <h2>5hrs</h2>
+                <p>Last Week-10hrs</p>
+            </div>
+            <div class="card card7">
+                <h3>Self Care</h3>
+                <h2>2hrs</h2>
+                <p>Last Week-2hrs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </body>
+    </html>

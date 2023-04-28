@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Price Grid Component</title>
+    <style>
+        /* CSS Resets */
+        html,body,div, p, h1, h2, h3, h4, h5, h6{
+            padding: 0px;
+            margin: 0px;
+        }
+        body{
+            background-color: azure;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .top-container{
+            width: 536px;
+            height:150px;
+            background-color: white;
+            /* border: 1px solid orange; */
+            padding: 32px;
+            border-radius: 4px;
+        }
+        .top-container p{
+            /* margin: 10px 0px 10px 0px; */
+            margin: 10px 0px;
+        }
+        #title{
+            color: rgb(40, 165,162);
+            font-weight: bold;
+            font-size: 24px;
+        }
+        #title1{
+            color: rgb(178, 218,40);
+        }
+        #para{
+            color: rgb(221, 223, 225);
+        }
+        .bottom-container{
+            width: 600px;
+            height: 250px;
+            /* border: 1px solid black; */
+            display: flex;
+        }
+        .left-section{
+            height: 185px;
+            width: 236px;
+            /* border: 1px solid chartreuse; */
+            padding: 32px;
+            border-bottom-left-radius: 4px;
+            background-color: rgb(40, 165,162);
+            color: white;
+        }
+        .second-part{
+            display: flex;
+            column-gap: 5px;
+            height: 40px;
+        }
+        #price{
+            font-weight: bold;
+            font-size: 32px;
+            justify-content: center;
+        }
+        button{
+            background-color: greenyellow;
+            width: 150px;
+            height: 40px;
+            color: white;
+            border: 0;
+            border-radius: 4px;
+        }
+        .right-section{
+            height: 185px;
+            width: 236px;
+            padding: 32px;
+            border-bottom-right-radius: 4px;
+            background-color: rgb(62, 172,175);
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="top-container">
+            <p id="title">Join our community</p>
+            <p id="title1">30-day,hassel-free money back guarantee</p>
+            <p id="para">Gain access to our full library of tutorials along with expert code reviews.Perfect for any developers who are serious about honing their skills.</p>
+        </div>
+
+        <div class="bottom-container">
+
+            <div class="left-section">
+                <p>Monthly Subscription</p>
+                <div class="second-part">
+                    <p id="price">$29</p>
+                    <p>Per Month</p>
+                </div>
+                <p>full access for less than $1 a day</p>
+                <button>Sign up</button>
+            </div>
+
+            <div class="right-section">
+                <h3>Why Us</h3>
+                <p>Tutorials by industry experts peer & expert code review coding exercises Access to our Github repose Community forum Flashcard decks New videos every Week</p>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>
