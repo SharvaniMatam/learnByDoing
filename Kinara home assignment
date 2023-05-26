@@ -1,0 +1,58 @@
+from flask import Flask, request, jsonify
+import csv
+
+app = Flask(_name_)
+
+# Global variables
+STUDENT_DATA_FILE = 'student_data.csv'
+PAGE_SIZE = 10
+
+def load_student_data():
+    """
+    Load student data from the CSV file
+    """
+    with open(STUDENT_DATA_FILE, 'r') as file:
+        reader = csv.DictReader(file)
+        student_data = [row for row in reader]
+    return student_data
+
+def filter_student_data(student_data, filters):
+    """
+    Apply filters to the student data
+    """
+    filtered_data = student_data
+    for column, value in filters.items():
+        filtered_data = [row for row in filtered_data if row[column] == value]
+    return filtered_data
+
+def paginate_student_data(student_data, page, page_size):
+    """
+    Paginate the student data
+    """
+    start_index = (page - 1) * page_size
+    end_index = start_index + page_size
+    return student_data[start_index:end_index]
+
+@app.route('/students', methods=['GET'])
+def get_students():
+    """
+    API endpoint to retrieve student details with pagination and filtering
+    """
+    page = int(request.args.get('page', 1))
+    page_size = int(request.args.get('page_size', PAGE_SIZE))
+    filters = request.args.to_dict()
+
+    # Load student data
+    student_data = load_student_data()
+
+    # Apply server-side filtering
+    if filters:
+        student_data = filter_student_data(student_data, filters)
+
+    # Perform pagination
+    paginated_data = paginate_student_data(student_data, page, page_size)
+
+    return jsonify(paginated_data)
+
+if _name_ == '_main_':
+    app.run()
